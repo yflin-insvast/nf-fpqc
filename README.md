@@ -1,17 +1,3 @@
-# nf-fpqc
-fastq files qc processes
-
-## blue print
-
-1. fastp, concat, filtering, trim adapter, process reads when reach a number
-2. fastQC, fast evaluating data quality
-3. deal some input dir type (dir_depth=0, dir_depth=1)
-4. auto combine, ...
-5. rename, dirname or filename is filenametag, if not provide samplename2filenametag, use filenametag as samplename as default
-
-
-
-
 # yflin-insvast/nf-fpqc
 
 [![GitHub Actions CI Status](https://github.com/yflin-insvast/nf-fpqc/actions/workflows/ci.yml/badge.svg)](https://github.com/yflin-insvast/nf-fpqc/actions/workflows/ci.yml)
@@ -28,6 +14,8 @@ fastq files qc processes
 
 **yflin-insvast/nf-fpqc** is a bioinformatics pipeline that ...
 
+fastq files qc processes
+
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
    major pipeline sections and the types of output it produces. You're giving an overview to someone new
@@ -40,6 +28,15 @@ fastq files qc processes
 
 1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
 2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+
+## blue print
+
+1. fastp, concat, filtering, trim adapter, process reads when reach a number
+2. fastQC, fast evaluating data quality
+3. deal some input dir type (dir_depth=0, dir_depth=1)
+4. auto combine, ...
+5. rename, dirname or filename is filenametag, if not provide samplename2filenametag, use filenametag as samplename as default
+
 
 ## Usage
 
